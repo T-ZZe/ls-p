@@ -1,0 +1,14 @@
+name: SkillTree
+version: 1.1
+main: fr.skills.SkillsPlugin
+api-version: "26.3"
+description: Arbre de compétences (2 pages) avec sceptre, camouflage, XP, sanguinaire et nécromancien
+commands:
+  skills:
+    description: Ouvre l'arbre de compétences
+    usage: /skills [wand|points|give|reset]
+    aliases: [competences]
+permissions:
+  skills.admin:
+    description: Donner des points / reset
+    default: op

@@ -1,0 +1,38 @@
+# Équilibrage des pouvoirs de SkillTree. Rechargé au redémarrage du serveur.
+# Chaque valeur "1 / 2 / 3" correspond au palier (niveau) du pouvoir.
+
+camouflage:
+  duration-seconds: 45        # invisibilité totale (corps + armure + objets)
+  cooldown-seconds: 180       # recharge, comptée depuis l'activation
+  break-on-pvp-attack: true   # frapper un joueur te révèle (mets false pour garder les 45s complètes)
+
+experience:
+  multiplier:                 # multiplicateur d'XP (mobs, minerais, pêche, fours, élevage)
+    1: 1.2
+    2: 1.4
+    3: 1.7
+  bottle-cost:                # points d'XP consommés par fiole d'XP (une fiole rend 3 à 11 XP)
+    2: 12
+    3: 9
+
+sanguinaire:
+  chance:                     # % de chance de voler des PV à chaque coup
+    1: 12
+    2: 22
+    3: 32
+  steal:                      # PV maximum volés (1 PV = un demi-cœur)
+    1: 1.0
+    2: 2.0
+    3: 3.0
+  max-fraction-of-damage: 0.6 # le vol ne dépasse jamais cette part des dégâts infligés
+  pvp-multiplier: 0.75        # le vol est réduit contre les joueurs
+
+necromancien:
+  cooldown-seconds:
+    1: 75
+    2: 90
+    3: 120
+  duration-seconds:           # durée de vie des monstres invoqués
+    1: 40
+    2: 50
+    3: 60
